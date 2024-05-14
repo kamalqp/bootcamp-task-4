@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./build/app.css">
+    <title>Document</title>
+</head>
+<body class="pt-32 md:pr-36 md:pt-44.5 bg-gray-200">
+    <svg class="hidden">
+        <symbol id="clock" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+        </symbol>
+        <symbol id="user" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </symbol>
+        <symbol id="cup"  viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.08752 10.125V11.35" stroke="#FF9900" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.17084 13.3333H10.0042V12.75C10.0042 12.1083 9.47917 11.5833 8.8375 11.5833H5.3375C4.69584 11.5833 4.17084 12.1083 4.17084 12.75V13.3333V13.3333Z" stroke="#FF9900" stroke-width="0.875" stroke-miterlimit="10"/>
+            <path d="M3.58752 13.3333H10.5875" stroke="#FF9900" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.00002 9.83332C4.74252 9.83332 2.91669 8.00749 2.91669 5.74999V3.99999C2.91669 2.71082 3.96085 1.66666 5.25002 1.66666H8.75002C10.0392 1.66666 11.0834 2.71082 11.0834 3.99999V5.74999C11.0834 8.00749 9.25752 9.83332 7.00002 9.83332Z" fill="#FF9900" fill-opacity="0.2" stroke="#FF9900" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M3.19084 7.29584C2.75334 7.15584 2.36834 6.89917 2.065 6.59584C1.54 6.01251 1.19 5.31251 1.19 4.49584C1.19 3.67917 1.83167 3.03751 2.64834 3.03751H3.0275C2.91084 3.30584 2.8525 3.60334 2.8525 3.91251V5.66251C2.8525 6.24584 2.975 6.79417 3.19084 7.29584Z" stroke="#FF9900" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10.8091 7.29584C11.2466 7.15584 11.6316 6.89917 11.935 6.59584C12.46 6.01251 12.81 5.31251 12.81 4.49584C12.81 3.67917 12.1683 3.03751 11.3516 3.03751H10.9725C11.0891 3.30584 11.1475 3.60334 11.1475 3.91251V5.66251C11.1475 6.24584 11.025 6.79417 10.8091 7.29584Z" stroke="#FF9900" stroke-width="0.875" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+            
+        <symbol id="presentation" fill="none"  viewBox="0 0 24 24" stroke="currentColor"  xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.6747 4.19024C13.5875 3.60325 10.4125 3.60325 7.32531 4.19024C5.83267 4.47405 4.64581 5.5476 4.24049 6.94822L4.19222 7.11502C3.60259 9.15256 3.60259 11.3084 4.19222 13.346L4.24049 13.5128C4.64581 14.9134 5.83267 15.9869 7.32531 16.2707C10.4125 16.8577 13.5875 16.8577 16.6747 16.2707C18.1673 15.9869 19.3542 14.9134 19.7595 13.5128L19.8078 13.346C20.3974 11.3084 20.3974 9.15256 19.8078 7.11503L19.7595 6.94822C19.3542 5.5476 18.1673 4.47405 16.6747 4.19024ZM7.04513 2.71664C10.3175 2.09445 13.6825 2.09445 16.9549 2.71664C18.985 3.10264 20.6331 4.57103 21.2004 6.53125L21.2487 6.69806C21.9171 9.00798 21.9171 11.453 21.2487 13.7629L21.2004 13.9297C20.6331 15.8899 18.985 17.3583 16.9549 17.7443C15.5652 18.0086 14.1589 18.1606 12.75 18.2004V20.25H14.6361C15.0504 20.25 15.3861 20.5858 15.3861 21C15.3861 21.4142 15.0504 21.75 14.6361 21.75H9.36386C8.94964 21.75 8.61386 21.4142 8.61386 21C8.61386 20.5858 8.94964 20.25 9.36386 20.25H11.25V18.2004C9.84112 18.1606 8.43476 18.0086 7.04513 17.7443C5.015 17.3583 3.36686 15.8899 2.79961 13.9297L2.75134 13.7629C2.08289 11.453 2.08289 9.00798 2.75134 6.69805L2.79961 6.53125C3.36686 4.57103 5.015 3.10264 7.04513 2.71664Z"/>
+            <path d="M14.3778 11.9822C14.3869 11.9749 14.3961 11.9678 14.4051 11.9606L16.464 10.3393C16.7894 10.083 16.8455 9.61145 16.5892 9.28603C16.3329 8.9606 15.8614 8.90455 15.536 9.16082L13.4771 10.7822C13.3981 10.8444 13.3339 10.8949 13.2778 10.9376C13.2341 10.8822 13.1846 10.8173 13.1236 10.7373L12.0695 9.35377C12.0625 9.34457 12.0555 9.33533 12.0484 9.32604C11.9223 9.16036 11.7862 8.98161 11.6511 8.84655C11.493 8.68852 11.2597 8.50969 10.9248 8.46715C10.5899 8.42462 10.3193 8.53946 10.1267 8.65296C9.96215 8.74996 9.78571 8.88901 9.62217 9.01791C9.613 9.02514 9.60387 9.03233 9.59479 9.03948L7.53595 10.6608C7.21053 10.9171 7.15447 11.3886 7.41074 11.7141C7.66701 12.0395 8.13857 12.0955 8.46399 11.8393L10.5228 10.2179C10.6019 10.1557 10.666 10.1052 10.7222 10.0624C10.7659 10.1179 10.8154 10.1828 10.8764 10.2628L11.9304 11.6463C11.9374 11.6555 11.9445 11.6648 11.9516 11.674C12.0777 11.8397 12.2138 12.0185 12.3489 12.1535C12.5069 12.3116 12.7402 12.4904 13.0752 12.5329C13.4101 12.5755 13.6807 12.4606 13.8732 12.3471C14.0378 12.2501 14.2142 12.1111 14.3778 11.9822Z"/>
+        </symbol>
+        
+        <symbol id="Trash-2" fill="none"  viewBox="0 0 24 24" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="m3 6.28259c-.41421 0-.75.33579-.75.75 0 .41422.33579.75.75.75zm18 1.5c.4142 0 .75-.33578.75-.75 0-.41421-.3358-.75-.75-.75zm-16-.75v-.75h-.75v.75zm14 0h.75v-.75h-.75zm-.6582 9.79771.7206.208zm-4.6178 4.025.1249.7396zm-3.448 0 .125-.7395zm-.1577-.0266-.125.7395zm-4.46015-3.9984-.72058.208zm8.22355 3.9984-.1249-.7395zm-6.03916-15.33931.68079.31467zm.97548-1.30827-.50053-.55854zm1.45988-.87416.261.70313zm3.4442 0 .261-.70312zm2.4354 2.18243.6808-.31468zm-13.1575 2.2932h18v-1.5h-18zm10.7568 12.30661-.1578.0266.2499 1.4791.1578-.0267zm-3.3558.0266-.1578-.0266-.2499 1.479.1577.0267zm7.849-13.08321v5.14321h1.5v-5.14321zm-12.5 5.14331v-5.14331h-1.5v5.14331zm12.5-.0001c0 1.5048-.2117 3.0018-.6288 4.4465l1.4412.416c.4561-1.58.6876-3.2171.6876-4.8625zm-4.651 7.94c-1.0586.1789-2.1394.1789-3.198 0l-.25 1.4791c1.2241.2068 2.4738.2068 3.6979 0zm-3.3558-.0266c-1.83797-.3106-3.34163-1.6557-3.86447-3.4669l-1.44116.416c.68121 2.3598 2.64409 4.1224 5.05573 4.5299zm-3.86447-3.4669c-.41703-1.4447-.62873-2.9417-.62873-4.4464h-1.5c0 1.6453.23148 3.2824.68757 4.8624zm7.62797 4.9459c2.4116-.4075 4.3745-2.1701 5.0557-4.5299l-1.4412-.416c-.5228 1.8112-2.0265 3.1563-3.8644 3.4669zm-5.7567-14.53561c0-.41892.09194-.8361.27333-1.22853l-1.36158-.62935c-.2709.58608-.41175 1.21767-.41175 1.85788zm.27333-1.22853c.18154-.39273.45024-.75525.79522-1.0644l-1.00106-1.11708c-.49074.43977-.88498.96635-1.15574 1.55213zm.79522-1.0644c.34514-.30929.75925-.5584 1.22035-.72957l-.522-1.40625c-.63074.23414-1.20882.57911-1.69941 1.01874zm1.22035-.72957c.4612-.17119.9579-.26009 1.4611-.26009v-1.5c-.6787 0-1.3523.11972-1.9831.35384zm1.4611-.26009c.5032 0 .9999.0889 1.4611.26009l.522-1.40625c-.6308-.23412-1.3044-.35384-1.9831-.35384zm1.4611.26009c.4611.17117.8752.42028 1.2204.72957l1.001-1.11708c-.4906-.43963-1.0687-.7846-1.6994-1.01874zm1.2204.72957c.3449.30915.6136.67167.7952 1.06441l1.3616-.62936c-.2708-.58578-.665-1.11236-1.1558-1.55213zm.7952 1.0644c.1814.39243.2733.80961.2733 1.22853h1.5c0-.64021-.1408-1.27179-.4117-1.85788zm-10.4767 1.97853h14v-1.5h-14z" fill="#FF0000CC"/>
+            <path d="m10 12v4m4-4v4" stroke="#FF0000CC" stroke-linecap="round" stroke-width="1.5"/>
+        </symbol>
+
+        <symbol id="receipt-text"  viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.3334 5.00002V7.01669C18.3334 8.33335 17.5 9.16669 16.1834 9.16669H13.3334V3.34169C13.3334 2.41669 14.0917 1.66669 15.0167 1.66669C15.925 1.67502 16.7584 2.04169 17.3584 2.64169C17.9584 3.25002 18.3334 4.08335 18.3334 5.00002Z" fill="#555775"/>
+            <path opacity="0.4" d="M1.66663 5.83335V17.5C1.66663 18.1917 2.44996 18.5834 2.99996 18.1667L4.42496 17.1C4.75829 16.85 5.22496 16.8834 5.52496 17.1834L6.90829 18.575C7.23329 18.9 7.76663 18.9 8.09163 18.575L9.49162 17.175C9.78329 16.8834 10.25 16.85 10.575 17.1L12 18.1667C12.55 18.575 13.3333 18.1834 13.3333 17.5V3.33335C13.3333 2.41669 14.0833 1.66669 15 1.66669H5.83329H4.99996C2.49996 1.66669 1.66663 3.15835 1.66663 5.00002V5.83335Z" fill="#555775"/>
+            <path d="M10 8.125H5C4.65833 8.125 4.375 7.84167 4.375 7.5C4.375 7.15833 4.65833 6.875 5 6.875H10C10.3417 6.875 10.625 7.15833 10.625 7.5C10.625 7.84167 10.3417 8.125 10 8.125Z" fill="#555775"/>
+            <path d="M9.375 11.4583H5.625C5.28333 11.4583 5 11.175 5 10.8333C5 10.4916 5.28333 10.2083 5.625 10.2083H9.375C9.71667 10.2083 10 10.4916 10 10.8333C10 11.175 9.71667 11.4583 9.375 11.4583Z" fill="#555775"/>
+        </symbol>
+            
+    </svg>
+    
+    <h1  class="font-vazirBlack text-2xl flex-center md:block md:text-4xl text-secondary-800">سبد دوره های شما</h1>
+    <section class="pr-10 md:pr-[99px] mt-[91px] cart flex__col items-center md:flex md:flex-row gap-x-20">
+
+        <div class="space-y-5 ">
+            <div class="course-holder">
+                <div class="md:pr-6 flex-items-center">
+                    <div><img src="./img/course/react .jpg" loading="lazy" alt="course react" class=" w-[124px] h-[89px] md:w-[167px] md:h-[121px] rounded-[10px] object-cover"></div>
+                    <div class=" pr-3 md:pr-8 flex__col gap-y-3 ">
+                        <p class="course__titel">دوره حرفه ای متخصص ری اکت</p>
+                        <div class="flex gap-x-3 md:hidden md:pb-8">
+                            <div class="course__price">
+                                6,298,000
+                                <span class="custom-currency">تومان</span>
+                            </div>
+                            <div class="trash-icon">
+                                <svg class="w-4 h-4">
+                                    <use href="#Trash-2"></use>
+                                    
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- details & Icons -->
+                        <div class="hidden md:block">
+                            <div class="course__details--container">
+                                <span class="course__details">
+                                
+                                    <svg class="w-4 h-4">
+                                        <use href="#clock"></use>
+                                        
+                                    </svg>
+                                    45 ساعت
+                                </span>
+                                <span class="course__details">
+                                
+                                    <svg class="w-4 h-4">
+                                        <use href="#user"></use>
+                                        
+                                    </svg>
+                                    +1300 دانشجو
+                                </span>
+                            </div>
+                            <div class="course__details--container">
+                                <span class="course__details">
+                                
+                                    <svg class="w-4 h-4">
+                                        <use href="#presentation"></use>
+                                        
+                                    </svg>
+                                    270 جلسه
+                                </span>
+                                <span class="course__details -mr-0.5 text-gold">
+                                
+                                    <svg class="w-4 h-4">
+                                        <use href="#cup"></use>
+                                        
+                                    </svg>
+                                    چالش های هفتگی
+                                </span>
+                            </div>
+ 
+                        </div>
+
+                    </div>
+                </div> 
+                <div class="hidden md:flex__col pl-5 justify-between">
+                    <div class="mt-7 flex-items-center gap-x-2.5">
+                        <samp><img src="./img/user/user1.jpg" alt="user1" class="w-9 h-9 object-cover rounded-2xl" ></samp>
+                        <div class="flex__col justify-center ">
+                            <span class="text-2xs font-vazirBold text-secondary-200 ">مدرس دوره</span>
+                            <p class="text-sm font-vazirBlack text-secondary-900">صاحب محمدی</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex gap-x-3 pb-8">
+                            <div class="course__price">
+                                6,298,000
+                                <span class="text-1xs font-vazirBold text-secondary-300/50">تومان</span>
+                            </div>
+                            <div class="trash-icon ">
+                                <svg class="w-4 h-4">
+                                    <use href="#Trash-2"></use>
+                                    
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-holder">
+                <div class="md:pr-6 flex-items-center  ">
+                    <div><img src="./img/course/react .jpg" loading="lazy" alt="course react" class=" w-[124px] h-[89px] md:w-[167px] md:h-[121px] rounded-[10px] object-cover"></div>
+                    <div class=" pr-3 md:pr-8 flex__col gap-y-3 ">
+                        <p class="course__titel">دوره حرفه ای متخصص ری اکت</p>
+                        <div class="flex gap-x-3 md:hidden md:pb-8">
+                            <div class="course__price">
+                                6,298,000
+                                <span class="custom-currency">تومان</span>
+                            </div>
+                            <div class="trash-icon ">
+                                <svg class="w-4 h-4">
+                                    <use href="#Trash-2"></use>
+                                    
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- details & Icons -->
+                        <div class="hidden md:block">
+                            <div class="course__details--container">
+                                <span class="course__details">
+                                
+                                    <svg class="w-4 h-4">
+                                        <use href="#clock"></use>
+                                        
+                                    </svg>
+                                    45 ساعت
+                                </span>
+                                <span class="course__details">
+                                
+                                    <svg class="w-4 h-4">
+                                        <use href="#user"></use>
+                                        
+                                    </svg>
+                                    +1300 دانشجو
+                                </span>
+                            </div>
+                            <div class="course__details--container">
+                                <span class="course__details">
+                                
+                                    <svg class="w-4 h-4">
+                                        <use href="#presentation"></use>
+                                        
+                                    </svg>
+                                    270 جلسه
+                                </span>
+                                <span class="course__details -mr-0.5 text-gold">
+                                
+                                    <svg class="w-4 h-4">
+                                        <use href="#cup"></use>
+                                        
+                                    </svg>
+                                    چالش های هفتگی
+                                </span>
+                            </div>
+ 
+                        </div>
+
+                    </div>
+                </div> 
+                <div class="hidden md:flex__col pl-5 justify-between">
+                    <div class="mt-7 flex-items-center gap-x-2.5">
+                        <samp><img src="./img/user/user1.jpg" alt="user1" class="w-9 h-9 object-cover rounded-2xl" ></samp>
+                        <div class="flex__col justify-center ">
+                            <span class="text-2xs font-vazirBold text-secondary-200 ">مدرس دوره</span>
+                            <p class="text-sm font-vazirBlack text-secondary-900">صاحب محمدی</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex gap-x-3 pb-8">
+                            <div class="course__price">
+                                6,298,000
+                                <span class="text-1xs font-vazirBold text-secondary-300/50">تومان</span>
+                            </div>
+                            <div class="trash-icon ">
+                                <svg class="w-4 h-4">
+                                    <use href="#Trash-2"></use>
+                                    
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-78.80 h-92.5 mt-16 md:mt-0 rounded-2xl bg-white">
+            <!-- heder -->
+            <div class="p-8 w-full flex-items-center gap-x-2.5 custom-border-b">
+                <svg class="w-6 h-6">
+                    <use href="#receipt-text"></use>
+                </svg>
+                <h1 class="font-vazirBlack text-xl">پرداخت</h1>
+            </div>
+
+            <div class="px-8 py-6 flex__col gap-y-6 custom-border-b border-dashed">
+                <div class="flex justify-between">
+                    <span class="cart__details ">جمع دوره ها</span>
+                    <span class="text-lg font-vazirBlack text-Primary-900"> 4.250.000 +</span>
+                </div>
+                <div class="flex justify-between">
+                    <span class="cart__details ">سود شما از خرید گروهی</span>
+                    <span class="text-lg font-vazirBlack text-cuRed/80"> 750.000 -</span>
+                </div>
+            </div>
+
+            <div class="px-7 py-6 flex__col gap-y-6" >
+                <p class="flex-center text-sm font-vazirBold text-secondary-700">کد تخفیف دارم!</p>
+                <div class="py-3 px-10 flex-center gap-1 rounded-2xl text-white bg-Primary-900">
+                    <h3 class="font-vazirBold">پرداخت</h3>
+                    <p class="text-lg font-vazirBlack"> 3.500.000</p>
+                    <span class="font-vazirBold text-xs">تومان</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

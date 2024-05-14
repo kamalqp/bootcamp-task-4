@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "vazir Thin";
+        src: url("/src/fonts/vazir/Vazirmatn-Thin.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "vazir ExtraLight";
+        src: url("/src/fonts/vazir/Vazirmatn-ExtraLight.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "vazir Light";
+        src: url("/src/fonts/vazir/Vazirmatn-Light.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "vazir Regular";
+        src: url("/src/fonts/vazir/Vazirmatn-Regular.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "vazir Medium";
+        src: url("/src/fonts/vazir/Vazirmatn-Medium.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "vazir SemiBold";
+        src: url("/src/fonts/vazir/Vazirmatn-SemiBold.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "vazir Bold";
+        src: url("/src/fonts/vazir/Vazirmatn-Bold.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "vazir ExtraBold";
+        src: url("/src/fonts/vazir/Vazirmatn-ExtraBold.woff2") format("woff2");
+        font-display: swap;
+    }
+
+    @font-face {
+        font-family: "vazir Black";
+        src: url("/src/fonts/vazir/Vazirmatn-Black.woff2") format("woff2");
+        font-display: swap;
+    }
+}
+
+@layer components {
+
+    .flex-center {
+        @apply flex items-center justify-center 
+    }
+    .flex-items-center {
+        @apply flex items-center
+    }
+    .flex__col {
+        @apply flex flex-col
+    }
+
+    .custom-border{
+       @apply border border-grayB
+    }
+    .custom-border-b {
+        @apply border-b border-grayB
+    }
+
+    .custom-currency {
+        @apply text-secondary-300/50 text-1xs font-vazirBold
+    }
+
+    .course-holder {
+        @apply w-78.80  h-29.80 md:w-175 md:h-44.5 px-3 py-4 md:py-0 md:px-0 md:flex md:gap-x-16 rounded-xl bg-white
+    }
+
+    .course__img {
+        @apply w-[167px] h-[121px] rounded-[10px] object-cover;
+    }
+    .course__titel {
+        @apply text-sm md:text-lg font-vazirBlack whitespace-nowrap text-secondary-900;
+    }
+    .course__details--container {
+        @apply mt-2.5 flex items-center gap-x-6;
+    }
+    .course__details{
+        @apply flex items-center gap-x-1.5 font-bold text-xs text-secondary-600
+       
+    }
+    .course__price {
+        @apply flex text-2xl gap-x-2 font-vazirBlack text-Primary-900
+    }
+    
+    .course__img--teacher {
+
+    }
+
+    .trash-icon {
+        @apply w-8 h-8 custom-border flex-center rounded-xl text-[#FF0000CC]/20
+    }
+    
+    .cart__details {
+        @apply text-base font-vazirBlack tracking-tighter text-secondary-700 ;
+    }
+}
